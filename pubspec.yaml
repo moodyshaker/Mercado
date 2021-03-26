@@ -1,0 +1,43 @@
+name: mercado
+description: A new Flutter application.
+publish_to: 'none'
+version: 1.0.0+1
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  google_fonts:
+  provider:
+  shared_preferences:
+  sqflite:
+  connectivity:
+  path:
+  path_provider:
+  fluttertoast:
+  flutter_facebook_login:
+  flutter_facebook_auth:
+  google_sign_in:
+  firebase_core:
+  firebase_auth:
+  image_picker:
+  email_validator:
+  awesome_dialog:
+  modal_progress_hud:
+  flutter_icons:
+  http:
+  intl:
+  flutter_staggered_grid_view:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
