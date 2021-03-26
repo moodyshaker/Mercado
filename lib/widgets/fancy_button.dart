@@ -15,17 +15,22 @@ class FancyButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RaisedButton(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(
-          8.0,
-        ),
-      ),
+    return ElevatedButton(
+      style: ButtonStyle(
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(
+                8.0,
+              ),
+            ),
+          ),
+          backgroundColor: MaterialStateProperty.all<Color>(
+            color,
+          )),
       child: Text(
         title,
         style: TextStyle(color: textColor),
       ),
-      color: color,
       onPressed: onPress,
     );
   }

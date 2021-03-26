@@ -38,10 +38,17 @@ class ConfirmDialog extends StatelessWidget {
         ),
         actions: [
           if (onConfirmTitle != null)
-            RaisedButton(
-              color: vm.isDarkMode ? Colors.white : Colors.black,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  vm.isDarkMode ? Colors.white : Colors.black,
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                ),
+              ),
               child: Text(
                 onConfirmTitle,
                 style:
@@ -52,10 +59,17 @@ class ConfirmDialog extends StatelessWidget {
               onPressed: onConfirm,
             ),
           if (onCancelTitle != null)
-            RaisedButton(
-              color: vm.isDarkMode ? Colors.white : Colors.black,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+            ElevatedButton(
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                  vm.isDarkMode ? Colors.white : Colors.black,
+                ),
+                shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                ),
+              ),
               child: Text(
                 onCancelTitle,
                 style:

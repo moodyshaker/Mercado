@@ -25,18 +25,19 @@ class SignInDialog extends StatelessWidget {
     return AlertDialog(
       title: Text(
         title,
-        style: Theme.of(context).appBarTheme.textTheme.headline5.copyWith(color:
-         Colors.black,),
+        style: Theme.of(context).appBarTheme.textTheme.headline5.copyWith(
+              color: Colors.black,
+            ),
       ),
       content: Text(
         content,
       ),
       actions: [
-        FlatButton(
+        TextButton(
           onPressed: leftActionOnPress,
           child: Text(leftAction),
         ),
-        FlatButton(
+        TextButton(
           onPressed: rightActionOnPress,
           child: Text(rightAction),
         )

@@ -35,7 +35,7 @@ class _ItemInformationState extends State<ItemInformation> {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    // final size = MediaQuery.of(context).size;
     return Consumer<GeneralProvider>(
       builder: (context, vm, child) => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

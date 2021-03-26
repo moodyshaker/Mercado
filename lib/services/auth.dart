@@ -2,7 +2,6 @@ import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class Auth {
@@ -40,13 +39,13 @@ class Auth {
 
   Future<String> facebookAuth() async {
     try {
-      AccessToken token = await FacebookAuth.instance.login();
+      final LoginResult result = await FacebookAuth.instance.login();
       FacebookAuthCredential credential =
-          FacebookAuthProvider.credential(token.token);
+          FacebookAuthProvider.credential(result.accessToken.token);
       String res = await userCredential(credential);
       return res;
-    } on FacebookAuthException catch (e) {
-      return e.errorCode;
+    } on FacebookAuthErrorCode catch (e) {
+      return e.toString();
     }
   }
 

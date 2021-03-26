@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:mercado/model/order_model.dart';
 import 'package:mercado/view_model/general_provider.dart';
@@ -10,8 +11,24 @@ class OrderButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<GeneralProvider>(
-      builder: (ctx, vm, ch) => RaisedButton(
-        padding: EdgeInsets.all(12.0),
+      builder: (ctx, vm, ch) => ElevatedButton(
+        style: ButtonStyle(
+          padding: MaterialStateProperty.all<EdgeInsetsGeometry>(
+            EdgeInsets.all(
+              12.0,
+            ),
+          ),
+          backgroundColor: MaterialStateProperty.all<Color>(
+            vm.isDarkMode ? Colors.white : Colors.black,
+          ),
+          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+            RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(
+                10.0,
+              ),
+            ),
+          ),
+        ),
         onPressed: () {
           if (vm.carts.length > 0) {
             showDialog(
@@ -43,12 +60,6 @@ class OrderButton extends StatelessWidget {
             Fluttertoast.showToast(msg: 'There is no orders in your cart');
           }
         },
-        color: vm.isDarkMode ? Colors.white : Colors.black,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(
-            10.0,
-          ),
-        ),
         child: Text(
           'Order Now',
           style: Theme.of(context).appBarTheme.textTheme.headline5.copyWith(

@@ -114,7 +114,7 @@ class _AddProductState extends State<AddProduct> {
                                         File(
                                           vm.imageFilepath,
                                         ),
-                                  fit: BoxFit.fill,
+                                        fit: BoxFit.fill,
                                       )
                                     : Icon(
                                         Icons.add_photo_alternate_outlined,
@@ -202,9 +202,19 @@ class _AddProductState extends State<AddProduct> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            RaisedButton(
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(10.0)),
+                            ElevatedButton(
+                              style: ButtonStyle(
+                                shape: MaterialStateProperty.all<
+                                    RoundedRectangleBorder>(
+                                  RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(10.0),
+                                  ),
+                                ),
+                                backgroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                  Theme.of(context).accentColor,
+                                ),
+                              ),
                               child: Text(
                                 widget.p != null
                                     ? 'Update Product'
@@ -213,7 +223,6 @@ class _AddProductState extends State<AddProduct> {
                                   color: Colors.white,
                                 ),
                               ),
-                              color: Theme.of(context).accentColor,
                               onPressed: () async {
                                 if (_formKey.currentState.validate()) {
                                   vm.setLoading(true);
