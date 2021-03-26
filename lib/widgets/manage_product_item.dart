@@ -65,7 +65,7 @@ class ManageProductItem extends StatelessWidget {
                   onPressed: () async {
                     String r = await vm.deleteProduct(product);
                     if (r != Auth.success) {
-                      Scaffold.of(context).showSnackBar(
+                      ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text(
                             'There is an error with your connection',

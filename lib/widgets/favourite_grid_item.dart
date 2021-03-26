@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:mercado/model/favourite_model.dart';
-import 'package:mercado/model/product.dart';
 import 'package:mercado/screen/item_details.dart';
 import 'package:mercado/view_model/general_provider.dart';
 import 'package:provider/provider.dart';
