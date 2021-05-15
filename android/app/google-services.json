@@ -8,122 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:813758733444:android:641b96439720c90e08b6d1",
-        "android_client_info": {
-          "package_name": "com.ahmed.flash_chat"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBdkDHAgowlNW7GssRVhOaEFY37asAOyfg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "813758733444-9r43bbnvmls7v7tpt0qcjrrpe4oi2lad.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.ahmed.flutterfirestore"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:813758733444:android:d8beeeeb800db47008b6d1",
-        "android_client_info": {
-          "package_name": "com.ahmed.flutterfirestore"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBdkDHAgowlNW7GssRVhOaEFY37asAOyfg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "813758733444-9r43bbnvmls7v7tpt0qcjrrpe4oi2lad.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.ahmed.flutterfirestore"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:813758733444:android:3b82df60f5ae4dc908b6d1",
-        "android_client_info": {
-          "package_name": "com.example.MovieDB"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "813758733444-5dalf18q6i66ao6ai18865s4p4liadov.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.MovieDB",
-            "certificate_hash": "6bb1dda8d4204393428f378e0041948a192c5e67"
-          }
-        },
-        {
-          "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBdkDHAgowlNW7GssRVhOaEFY37asAOyfg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "813758733444-9r43bbnvmls7v7tpt0qcjrrpe4oi2lad.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.ahmed.flutterfirestore"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:813758733444:android:d49ee959fde7328308b6d1",
         "android_client_info": {
           "package_name": "com.example.mercado"
@@ -131,55 +15,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "813758733444-svp7f9mhvi05rvbk4hp4bjommcq0op1k.apps.googleusercontent.com",
+          "client_id": "813758733444-682ul3tpfm6mb4art48kf52gjinrim6h.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.mercado",
-            "certificate_hash": "fb566f00cb39fda446984459c0fbe8b0e6d5d8fe"
-          }
-        },
-        {
-          "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBdkDHAgowlNW7GssRVhOaEFY37asAOyfg"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "813758733444-gd7htav5c22m69q66argmnvmt927h60k.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "813758733444-9r43bbnvmls7v7tpt0qcjrrpe4oi2lad.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.ahmed.flutterfirestore"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:813758733444:android:aeb6ff683b156ce008b6d1",
-        "android_client_info": {
-          "package_name": "com.example.personal_expenses"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "813758733444-6qtijcbi92impoo52m567orudl0h4ikc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.personal_expenses",
-            "certificate_hash": "6bb1dda8d4204393428f378e0041948a192c5e67"
+            "certificate_hash": "56b5e73e264606f9d91562a368d76a21e637f1cb"
           }
         },
         {
